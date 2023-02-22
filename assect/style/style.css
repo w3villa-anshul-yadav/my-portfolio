@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- 
+
 }
 
 
@@ -26,9 +26,9 @@
 
 body,
 html {
-     width: 100vw;
+    width: 100vw;
     height: 100vh;
-    
+
 
 }
 
@@ -62,7 +62,8 @@ html {
 }
 
 .padding-top-bottom {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
@@ -71,7 +72,7 @@ html {
 /* navbar */
 
 
-                
+
 
 .navbar-container {
     position: absolute;
@@ -87,7 +88,7 @@ html {
     align-items: center;
     z-index: 2;
     overflow-x: hidden;
-    overflow-y:auto;
+    overflow-y: auto;
 
 
 }
@@ -163,7 +164,7 @@ html {
     display: none;
     position: absolute;
     top: 2%;
-    right: 2%;
+    right: 3%;
     font-size: 32px;
     z-index: 5;
 }
@@ -172,12 +173,14 @@ html {
     .navbar-container {
         display: none;
     }
-    
+
     #navbar-toggler {
         display: block;
         color: white;
     }
-    .image-container .name ,.navbar-container .menu-container ul li {
+
+    .image-container .name,
+    .navbar-container .menu-container ul li {
         font-size: 15px;
     }
 
@@ -196,9 +199,9 @@ html {
         padding-left: 1px;
         padding-right: 1px;
     }
-    
 
-  
+
+
     @keyframes navbar-animation {
         from {
             transform: translateX(-400px);
@@ -233,7 +236,7 @@ html {
     object-fit: cover;
     background-size: cover;
     height: 100vh;
- 
+
 
 }
 
@@ -291,10 +294,10 @@ html {
 
     display: none;
     animation: about-animation .4s ease-in-out;
-    
-    
+
+
 }
- 
+
 
 @keyframes about-animation {
     from {
@@ -309,7 +312,7 @@ html {
     flex-direction: column;
     justify-content: center;
     width: 68vw;
-  
+
 }
 
 
@@ -324,7 +327,7 @@ html {
 
 .details .image-detail-container {
     display: flex;
-     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 
@@ -332,7 +335,7 @@ html {
 }
 
 .big-image-container {
-     padding: auto;
+    padding: auto;
 }
 
 .image-detail-container .big-image-container img {
@@ -344,14 +347,14 @@ html {
     border-radius: 190px;
 }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:500px) {
     .image-detail-container .big-image-container img {
         width: 250px !important;
-        
-        
+
+
     }
 }
- 
+
 
 .about-me {
     width: 100%;
@@ -372,7 +375,7 @@ html {
     font-size: 18px;
 }
 
- 
+
 .personal-details tr td {
     padding-right: 5px;
     width: auto;
@@ -396,12 +399,15 @@ html {
         padding-top: 40px;
         width: 90vw;
     }
+
     .personal-details a {
         font-size: 15px;
     }
+
     .personal-details strong {
         font-size: 17px;
     }
+
     .about-me h2 {
         font-size: 20px;
     }
@@ -426,14 +432,14 @@ html {
     }
 
 }
- 
+
 
 .resume-container {
     display: flex;
     flex-wrap: wrap;
-  
+
     overflow-x: hidden;
-    
+
     /* margin: 2px; */
 }
 
@@ -468,6 +474,13 @@ html {
     color: var(--orange-shade);
     border-radius: 4px;
     overflow: hidden;
+}
+
+@media screen and (max-width:600px) {
+    .skill-set .process-container {
+        width: 260px;
+    }
+
 }
 
 .process-container:hover {
@@ -558,7 +571,13 @@ html {
     height: 250px;
 
 }
-
+@media screen and (max-width:600px) {
+    .project-container .image-container {
+        width: 280px;
+        height: 230px;
+    
+    }
+}
 .image-container img {
     width: 100%;
     object-fit: cover;

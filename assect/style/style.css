@@ -87,7 +87,7 @@ html {
     align-items: center;
     z-index: 2;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y:auto;
 
 
 }
@@ -117,7 +117,7 @@ html {
 
 .image-container .name {
     padding-top: 20px;
-    font-size: 17px;
+    font-size: 20px;
     color: var(--orange-shade);
 }
 
@@ -132,7 +132,7 @@ html {
     text-align: center;
     color: white;
     display: flex;
-    font-size: 16px;
+    font-size: 19px;
     flex-direction: column;
     justify-content: center;
     padding: 30px 40px;
@@ -172,20 +172,24 @@ html {
     .navbar-container {
         display: none;
     }
-
+    
     #navbar-toggler {
         display: block;
         color: white;
     }
+    .image-container .name ,.navbar-container .menu-container ul li {
+        font-size: 15px;
+    }
 
     .window {
-        width: 99%;
+        width: 100%;
         left: 0;
-        top: 7%;
+        top: 0;
         right: 0;
+        /* bottom: 0; */
         overflow-x: hidden;
         padding: 2px;
-        height: 90vh;
+        height: 100%;
     }
 
     .padding-left-right {
@@ -193,6 +197,8 @@ html {
         padding-right: 1px;
     }
     
+
+  
     @keyframes navbar-animation {
         from {
             transform: translateX(-400px);
@@ -334,6 +340,14 @@ html {
 
     margin-top: 20px;
     border-radius: 190px;
+}
+
+@media screen and (max-width:500px){
+    .image-detail-container .big-image-container img {
+        width: 250px !important;
+        
+        
+    }
 }
  
 

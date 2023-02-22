@@ -291,8 +291,10 @@ html {
 
     display: none;
     animation: about-animation .4s ease-in-out;
-
+    
+    
 }
+ 
 
 @keyframes about-animation {
     from {
